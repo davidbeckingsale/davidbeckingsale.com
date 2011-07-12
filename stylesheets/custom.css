@@ -1,5 +1,6 @@
 .container {
   width: 710px;
+  min-height: 500px;
   margin: auto;
 }
 
@@ -15,54 +16,39 @@
 
 .buttons {
   width: 100%;
-}
-
-.buttons ul {
-  display: inline;
-  font-family: Century Gothic, sans-serif;
-}
-
-.buttons ul li {
-  list-style: none;
-  display: block;
-  float: left;
-  width: 150px;
-  height: 100px;
-  margin: 10px;
-  color: #FFFFFF;
-  cursor: pointer;
+  margin: auto;
 }
 
 .buttons a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 250%;
-}
-
-.cap {
-  font-size: 290%;
-  margin-left: 10px;
-  float: left;
-}
-
-.rest {
-  float: left;
-  margin-top: 60px;
-  font-size: 75%;
+display:block;
+float:left;
+width: 125px;
+height: 130px;
+font-size:400%;
+line-height:130%;
+text-decoration:none;
+font-weight:bold;
+color:#FFFFFF;
+cursor:pointer;
+padding-left: 5px;
 }
 
 #button1 {
   background-color: #8C1E1D;
+  margin: 0 63px 0 0;
 }
 
 #button2 {
   background-color: #4B8A79;
+  margin: 0 63px 0 0;
 }
 
 #button3 {
   background-color: #D0D969;
+  margin: 0 63px 0 0;
 }
 
 #button4 {
   background-color: #F28C3E;
+  margin: 0 0 0 0;
 }
