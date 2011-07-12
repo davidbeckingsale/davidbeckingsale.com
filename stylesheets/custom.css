@@ -52,3 +52,25 @@ padding-left: 5px;
   background-color: #F28C3E;
   margin: 0 0 0 0;
 }
+
+.content {
+  width: 709px;
+  min-height: 200px;
+  clear: both;
+}
+
+#bio {
+  background-color: #8C1E1D;
+}
+
+#code {
+  background-color: #4B8A79;
+}
+
+#web {
+  background-color: #D0D969;
+}
+
+#contact {
+  background-color: #F28C3E;
+}
