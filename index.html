@@ -28,14 +28,36 @@
       </div>
 
       <div class="buttons">
-          <a href="http://www.google.com" name="div1" id="button1">Me</a>
-          <a href="#" name="div2" id="button2">Code</a>
-          <a href="#" name="div3" id="button3">Web</a>
-          <a href="#" name="div4" id="button4">Talk</a>
+        <a href="#" name="bio" id="button1">Me</a>
+        <a href="#" name="code" id="button2">Code</a>
+        <a href="#" name="web" id="button3">Web</a>
+        <a href="#" name="contact" id="button4">Talk</a>
+        <script>
+          $('a[id^="button"]').click(function () {
+            var divname= this.name;
+            $("#"+divname).siblings().hide("fast");
+            $("#"+divname).show("slow");
+          });
+        </script> 
       </div>
+      <div>
+        <!-- Content will go here -->
+        <div class="content" id="bio" style="display:none">
+          Hello World
+        </div>
 
-      <!-- Content will go here -->
+        <div class="content" id="code" style="display:none">
+          Test
+        </div>
 
+        <div class="content" id="web" style="display:none">
+          Another Test
+        </div>
+
+        <div class="content" id="contact" style="display:none">
+          Final Test
+        </div>
+      </div>
     </div>
   </body>
 
