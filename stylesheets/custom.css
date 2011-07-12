@@ -1,0 +1,12 @@
+.container {
+  width: 710px;
+}
+
+
+.title {
+  font-family: 'Calligraffitti', cursive;
+  font-size: 200%;
+  margin: auto;
+  text-align: center;
+/*  font-family: 'La Belle Aurore', cursive; */
+}
