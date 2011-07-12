@@ -13,7 +13,8 @@
     <!--[if lt IE 8]><link href="/stylesheets/blueprint/ie.css?" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
     <link href="stylesheets/custom.css" media="screen" rel="stylesheet" type="text/css" />
- <link href='http://fonts.googleapis.com/css?family=Calligraffitti|La+Belle+Aurore&v2' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti|La+Belle+Aurore&v2' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.6.2.min.js"></script>
   </head>
 
   <body>
@@ -22,9 +23,23 @@
         <h1>
           David Beckingsale
         </h1>
+        <div id="icons">
+        </div>
       </div>
 
       <div class="buttons">
+        <ul>
+          <li id="button1"><a href="http://www.google.com" name="div1" ><div class="cap">M</div><div class="rest">e</div></a></li>
+          <li id="button2"><a href="#" name="div2" ><div class="cap">C</div><div class="rest">ode</div></a></li>
+          <li id="button3"><a href="#" name="div3" ><div class="cap">P</div><div class="rest">ortfolio</div></a></li>
+          <li id="button4"><a href="#" name="div4" ><div class="cap">T</div><div class="rest">alk</div></a></li>
+          <script>
+            $('li').click(function() {
+              window.location=$(this).find("a").attr("href");
+              return false;
+            })
+          </script>  
+        </ul>
       </div>
 
       <!-- Content will go here -->

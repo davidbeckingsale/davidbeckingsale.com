@@ -1,12 +1,68 @@
 .container {
   width: 710px;
+  margin: auto;
 }
 
 
 .title {
   font-family: 'Calligraffitti', cursive;
-  font-size: 200%;
+  font-size: 250%;
   margin: auto;
+  margin-top: 200px;
   text-align: center;
-/*  font-family: 'La Belle Aurore', cursive; */
+  /*  font-family: 'La Belle Aurore', cursive; */
+}
+
+.buttons {
+  width: 100%;
+}
+
+.buttons ul {
+  display: inline;
+  font-family: Century Gothic, sans-serif;
+}
+
+.buttons ul li {
+  list-style: none;
+  display: block;
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.buttons a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 250%;
+}
+
+.cap {
+  font-size: 290%;
+  margin-left: 10px;
+  float: left;
+}
+
+.rest {
+  float: left;
+  margin-top: 60px;
+  font-size: 75%;
+}
+
+#button1 {
+  background-color: #8C1E1D;
+}
+
+#button2 {
+  background-color: #4B8A79;
+}
+
+#button3 {
+  background-color: #D0D969;
+}
+
+#button4 {
+  background-color: #F28C3E;
 }
