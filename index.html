@@ -13,8 +13,53 @@
     <!--[if lt IE 8]><link href="/stylesheets/blueprint/ie.css?" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
     <link href="stylesheets/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/waterwheel-carousel.css" media="screen" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Calligraffitti|La+Belle+Aurore&v2' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $("#waterwheel-carousel-default").waterwheelCarousel();
+
+          $("#waterwheel-carousel-higharch").waterwheelCarousel({
+startingWaveSeparation: -90,
+waveSeparationFactor: .7,
+centerOffset: 10,
+startingItemSeparation: 120,
+itemSeparationFactor: .9,
+itemDecreaseFactor: .75
+});
+
+          $("#waterwheel-carousel-horizon").waterwheelCarousel({
+startingWaveSeparation: 0,
+centerOffset: 30,
+startingItemSeparation: 150,
+itemSeparationFactor: .7,
+itemDecreaseFactor: .75,
+autoPlay: 1500
+});
+
+$("#waterwheel-carousel-flat").waterwheelCarousel({
+itemSeparationFactor: 1,
+itemDecreaseFactor: 1,
+waveSeparationFactor: 1,
+startingWaveSeparation: 0,
+startingItemSeparation: 280,
+centerOffset: 10,
+opacityDecreaseFactor: .3,
+autoPlay: 3000,
+edgeReaction: 'reverse'
+});
+
+$("#waterwheel-carousel-vertical").waterwheelCarousel({
+orientation: 'vertical',
+startingItemSeparation: 100,
+startingWaveSeparation: 40,
+autoPlay: 2000
+});
+
+});
+</script> 
   </head>
 
   <body>
@@ -35,19 +80,45 @@
         <script>
           $('a[id^="button"]').click(function () {
             var divname= this.name;
-            $("#"+divname).siblings().hide("fast");
-            $("#"+divname).show("slow");
+            $("#"+divname).siblings().hide(0);
+            $("#"+divname).toggle(250);
           });
         </script> 
       </div>
       <div>
         <!-- Content will go here -->
         <div class="content" id="bio" style="display:none">
-          Hello World
+          <p>
+          I am a computer scientist that finds it hard to write things about himself.
+          </p>
+          <p>
+          Academically I am interested mainly in high-performance computing.
+          </p>
+          <p>
+          When I'm not on the computer I am probably drinking coffee or cooking.
+          </p>
         </div>
 
         <div class="content" id="code" style="display:none">
-          Test
+          <div id="waterwheel-carousel-horizon">
+            <div class="carousel-controls">
+              <div class="carousel-prev"><a href="#">&lt; previous</a></div>
+              <div class="carousel-next"><a href="#">&gt; next</a></div>
+            </div>
+            <div class="carousel-images">
+              <img src="images/testImage1.png" alt="Test Image 1" />
+              <img src="images/testImage2.png" alt="Test Image 2" />
+              <img src="images/testImage3.png" alt="Test Image 3" />
+              <img src="images/testImage4.png" alt="Test Image 4" />
+              <img src="images/testImage5.png" alt="Test Image 5" />
+              <img src="images/testImage6.png" alt="Test Image 6" />
+              <img src="images/testImage7.png" alt="Test Image 7" />
+              <img src="images/testImage8.png" alt="Test Image 8" />
+              <img src="images/testImage9.png" alt="Test Image 9" />
+              <img src="images/testImage10.png" alt="Test Image 10" />
+              <img src="images/testImage11.png" alt="Test Image 11" />
+            </div>
+          </div> 
         </div>
 
         <div class="content" id="web" style="display:none">

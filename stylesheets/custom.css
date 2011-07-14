@@ -9,7 +9,7 @@
   font-family: 'Calligraffitti', cursive;
   font-size: 250%;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 125px;
   text-align: center;
   /*  font-family: 'La Belle Aurore', cursive; */
 }
@@ -20,17 +20,18 @@
 }
 
 .buttons a {
-display:block;
-float:left;
-width: 125px;
-height: 130px;
-font-size:400%;
-line-height:130%;
-text-decoration:none;
-font-weight:bold;
-color:#FFFFFF;
-cursor:pointer;
-padding-left: 5px;
+  display:block;
+  float:left;
+  width: 125px;
+  height: 130px;
+  font-size:400%;
+  line-height:130%;
+  text-decoration:none;
+  font-weight:bold;
+  color:#FFFFFF;
+  cursor:pointer;
+  padding-left: 5px;
+  font-family: Palatino, serif;
 }
 
 #button1 {
@@ -54,9 +55,14 @@ padding-left: 5px;
 }
 
 .content {
-  width: 709px;
+  width: 679px;
   min-height: 200px;
   clear: both;
+  color: #FFFFFF;
+  font-size: 175%;
+  padding: 15px;
+  text-align: justify;
+  font-family: Palatino, serif;
 }
 
 #bio {
