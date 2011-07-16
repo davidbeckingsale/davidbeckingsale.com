@@ -59,10 +59,14 @@
   min-height: 200px;
   clear: both;
   color: #FFFFFF;
-  font-size: 175%;
+  font-size: 1.6em;
   padding: 15px;
   text-align: justify;
   font-family: Palatino, serif;
+}
+
+.content a {
+  color: #dddddd;
 }
 
 #bio {
@@ -75,8 +79,17 @@
 
 #web {
   background-color: #D0D969;
+  color: #000000;
+}
+
+#web a {
+  color: #333333;
 }
 
 #contact {
   background-color: #F28C3E;
+}
+
+p {
+  margin: 0 0 10px 0;
 }
